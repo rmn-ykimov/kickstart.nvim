@@ -280,12 +280,8 @@ require('lazy').setup({
       workspaces = {
         {
           name = "personal",
-          path = "~/vaults/personal",
-        },
-        {
-          name = "work",
-          path = "~/vaults/work",
-        },
+          path = "~/zettel",
+        }
       },
   
       -- see below for full list of options 👇
