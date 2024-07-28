@@ -4,5 +4,4 @@
 -- See the kickstart.nvim README for more information
 return {
   require('custom.plugins.obsidian'),
-  require('custom.plugins.oil'),
 }
