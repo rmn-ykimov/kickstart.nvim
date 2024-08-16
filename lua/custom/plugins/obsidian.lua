@@ -3,9 +3,11 @@ return {
   version = '*', -- recommended, use latest release instead of latest commit
   lazy = true,
   ft = 'markdown',
-  -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
+  -- Replace the above line with this if you only want to load obsidian.nvim
+  -- for markdown files in your vault:
   -- event = {
-  --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
+  --   -- If you want to use the home shortcut '~' here you need to call
+  --   'vim.fn.expand'.
   --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
   --   "BufReadPre path/to/my-vault/**.md",
   --   "BufNewFile path/to/my-vault/**.md",
@@ -16,6 +18,7 @@ return {
 
     -- see below for full list of optional dependencies 👇
   },
+
   opts = {
     workspaces = {
       {
@@ -31,12 +34,9 @@ return {
       folder = 'Templates',
       date_format = '%Y-%m-%d',
       time_format = '%H:%M',
-      -- A map for custom variables, the key should be the variable and the value a function
+      -- A map for custom variables, the key should be the variable and the
+      -- value a function
       substitutions = {},
     },
   },
-  config = function()
-    -- Добавляем кеймап для выполнения команды :ObsidianTemplate
-    vim.keymap.set('n', '<leader>ot', ':ObsidianTemplate<CR>', { silent = true, noremap = true, desc = 'Obsidian Template' })
-  end,
 }
