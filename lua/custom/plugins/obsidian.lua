@@ -27,14 +27,12 @@ return {
       --   path = "~/vaults/work",
       -- },
     },
-
-    -- see below for full list of options 👇
-  },
-  templates = {
-    folder = "Templates",
-    date_format = "%Y-%m-%d",
-    time_format = "%H:%M",
-    -- A map for custom variables, the key should be the variable and the value a function
-    substitutions = {},
+    templates = {
+      folder = 'Templates',
+      date_format = '%Y-%m-%d',
+      time_format = '%H:%M',
+      -- A map for custom variables, the key should be the variable and the value a function
+      substitutions = {},
+    },
   },
 }
