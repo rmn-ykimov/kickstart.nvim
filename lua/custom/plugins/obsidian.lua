@@ -35,4 +35,8 @@ return {
       substitutions = {},
     },
   },
+  config = function()
+    -- Добавляем кеймап для выполнения команды :ObsidianTemplate
+    vim.keymap.set('n', '<leader>ot', ':ObsidianTemplate<CR>', { silent = true, noremap = true, desc = 'Obsidian Template' })
+  end,
 }
